@@ -1,0 +1,305 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#wrap_all {
+	padding-top:0;
+}
+#particle-canvas {
+	z-index:0;
+}
+
+
+/* Main Start ******************************************************************************************************
+*******************************************************************************************************************
+*******************************************************************************************************************/
+
+#main .main-tit {
+    display: inline-block;
+    font-size: 100px;
+    font-weight: Bold;
+    color: #fff;
+    line-height: 1;
+    position: absolute;
+    z-index: 10;
+    top: 35vh;
+    left: 4%;
+    margin: 0;
+}
+#main .main-stit {
+    display: block;
+	font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    text-align: right;
+    margin: 25px 0 0 0;
+}
+.title {
+    font-family: handel-gothic,sans-serif;  
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.title > text {
+	-webkit-animation: stroke 5s infinite alternate;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #fff;
+    font-size: 184px;
+    font-family: handel-gothic,sans-serif;
+}
+@-webkit-keyframes stroke {
+	0%   {
+		stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; 
+		stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {
+		stroke: rgba(255,255,255,1); 
+	}
+	80%  {
+		stroke: rgba(255,255,255,1); 
+		stroke-width: 3; 
+	}
+	100% {
+		stroke: rgba(255,255,255,1); 
+		stroke-dashoffset: -25%; 
+		stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+@keyframes stroke {
+	0%   {
+		stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; 
+		stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {
+		stroke: rgba(255,255,255,1); 
+	}
+	80%  {
+		stroke: rgba(255,255,255,1); 
+		stroke-width: 3; 
+	}
+	100% {
+		stroke: rgba(255,255,255,1); 
+		stroke-dashoffset: -25%; 
+		stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+#main .main-stit em {
+	position:relative;
+	display:inline-block;
+	font-style:inherit;
+	font-size:100%;
+	font-weight:inherit;
+	color:inherit;
+}
+
+
+
+
+
+/* Main Side Start ******************************************************************************************************
+*******************************************************************************************************************
+*******************************************************************************************************************/
+#main-side {
+	position:fixed;
+	top:0;
+	right:0;
+	width:40%;
+	height:100%;
+	background:#020202;
+	z-index:100;
+}
+#main-side .member-wrap {
+	position:relative;
+	display:table;
+	width:100%;
+	height:100%;
+}
+#main-side .login-box {
+	display:table-cell;
+	vertical-align:middle;
+    width: 100%;
+    max-width: 500px;
+}
+#main-side .login-box h2{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+    display: block;
+    margin: 0 0 20px;
+}
+#main-side .login-box form .log-line input {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 5px;
+    padding: 0 15px;
+    background: #222222;
+    border: 1px solid #4a4a4a;
+}
+#main-side .login-box form .log-line input:last-child {
+	margin-bottom:0;
+}
+#main-side .tab-wrap {
+	position: Absolute;
+	top:30%;
+    left: -90px;
+}
+#main-side .tab-wrap > div {
+	position:relative;
+    display: block;
+    width:90px;
+    height: 65px;
+    line-height: 65px;
+    text-align: right;
+    padding: 0 20px;
+    background: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    margin-bottom: 5px;
+	cursor:pointer;
+}
+#main-side .tab-wrap > div:before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #c67ed8;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translate(0,-50%) scale(0);
+	-moz-transform: translate(0,-50%) scale(0);
+	-ms-transform: translate(0,-50%) scale(0);
+	-o-transform: translate(0,-50%) scale(0);
+	transform: translate(0,-50%) scale(0);
+	-webkit-transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-ms-transition:all .5s ease;
+	-o-transition:all .5s ease;
+	transition:all .5s ease;
+}
+#main-side .tab-wrap > div.on {
+    background: #101010;
+}
+#main-side .tab-wrap > div.on:before {
+    -webkit-transform: translate(0,-50%) scale(1);
+	-moz-transform: translate(0,-50%) scale(1);
+	-ms-transform: translate(0,-50%) scale(1);
+	-o-transform: translate(0,-50%) scale(1);
+	transform: translate(0,-50%) scale(1);
+}
+#main-side .tab-wrap > div:last-child {
+	margin-bottom:0;
+}
+#main-side .tab-item {
+	padding:0 80px;
+}
+#main-side .tab-item form {
+	max-width:400px;
+}
+#main-side .chk-wrap {
+	margin:5px 0 0 0;
+}
+#main-side .tab-item .btn-wrap {
+	margin:20px 0 0 0;
+	text-align:right;
+}
+#main-side .tab-item .btn-wrap .btn_full {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+}
+#main-side #joinForm .Account {
+
+}
+#main-side #joinForm .Account > .join-row {
+	width:100%;
+	font-size:0;
+	margin-bottom:5px;
+}
+#main-side #joinForm .Account > .join-row:last-child {
+	margin-bottom:0;
+}
+#main-side #joinForm .Account > .join-row > div {
+	display:inline-block;
+	vertical-align:middle;
+}
+#main-side #joinForm .jro-tit {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255,255,255,.8);
+    width: 80px;
+}
+#main-side #joinForm .jro-input {
+	width:calc(100% - 80px);
+}
+#main-side #joinForm .jro-input input {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+	padding: 0 15px;
+    background: #222222;
+    border: 1px solid #4a4a4a;
+}
+#main-side #joinForm #joinEmail .jro-input {
+	font-size:0;
+}
+#main-side #joinForm #joinEmail .jro-input input#join_email {
+	display:inline-block;
+	width:65%;
+	margin-right:5%;
+}
+#main-side #joinForm #joinEmail .jro-input span.emailText {
+	display:inline-block;
+	width:30%;
+	font-size:14px;
+	color:rgba(255,255,255,.5);
+}
+#main-side #joinForm #joinYear .jro-input {
+	font-size:0;
+}
+#main-side #joinForm #joinYear .jro-input select {
+	display:inline-block;
+    height: 45px;
+    line-height: 45px;
+	padding: 0 15px;
+    background: #222222;
+    border: 1px solid #4a4a4a;
+	color:rgba(255,255,255,.5);
+}
+#main-side #joinForm #joinYear .jro-input select#join_year {
+	width:40%;
+}
+#main-side #joinForm #joinYear .jro-input select#join_month,
+#main-side #joinForm #joinYear .jro-input select#join_day {
+	width:28%;
+	margin-left:2%;
+}
+#main-side #joinForm #joinTeam .jro-input select,
+#main-side #joinForm #joinPosition .jro-input select {
+	display:inline-block;
+	width:100%;
+    height: 45px;
+    line-height: 45px;
+	padding: 0 15px;
+    background: #222222;
+    border: 1px solid #4a4a4a;
+	color:rgba(255,255,255,.5);
+}

@@ -1,0 +1,117 @@
+/* 전체감싸고있는영역 가운데정렬 */
+.join_wrap {
+	width:1200px;
+	position:absolute; 
+	left:50%; 
+	top:50%; 
+	transform:translate(-50%,-50%); 
+	text-align:center;
+}
+
+.logo-wr{
+	margin:0 auto 50px;
+}
+
+/* 아이디, 비밀번호, 이메일, 이름*/
+.join-row {
+	display: table;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.idInterval { /*아이디 비밀번호사이간격 좁히기위한 클래스*/
+	margin:0 auto 5px;
+}
+
+.join-row .jro-tit {
+	display: table-cell;
+    text-align: left;
+    width: 100px;
+}
+
+.join-row .jro-input {
+	display: table-cell;
+	text-align:left;
+}
+
+.join-row .jro-input input {
+	width: 100%;
+    margin-right: 10px;
+}
+
+.jro-input.join-phone > input {
+	display: inline-block;
+    vertical-align: middle;
+    width: calc(33.33% - 6px);
+    margin-right: 0;
+}
+.jro-input span{
+	margin:0 10px 0 5px;
+}
+.join-row .jro-input .check_id_div { 
+	text-align:left;
+	position:relative;
+	top:8px;
+	left:10px;
+}
+
+#join_email {
+	width:180px;
+}
+
+/* 팀,직급 */
+.team {
+	display:table;
+	margin:0 auto 20px;
+}
+
+.team .jro-tit {
+	display: table-cell;
+    width: 100px;
+    text-align: left;
+}
+
+.team .jro-input #join_team {
+	width:100%;
+}
+
+.position {
+	display:table;
+	margin:0 auto 20px;
+}
+
+.position .jro-tit {
+	display:table-cell;
+	width:100px;
+	text-align:left;
+}
+
+.position .jro-input #join_level {
+	width:100%;
+}
+
+/* 버튼2개 */
+.btnWrap {
+	position:relative;
+	top:0;
+	left:20px;
+}
+.btnWrap a {
+	display:inline-block;
+	width:200px;
+	height:45px;
+	line-height:45px;
+	border:1px solid #777;
+	vertical-align: middle;
+	font-size:14px;
+	color:#000;
+	letter-spacing:0px;
+}
+.btnWrap .btn_login {
+	display:inline-block;
+	width:200px;
+	height:45px;
+	vertical-align: middle;
+	margin:0 0 0 10px;
+}

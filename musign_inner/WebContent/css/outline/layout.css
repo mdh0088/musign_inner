@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url("https://use.typekit.net/san6fyo.css");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
+
+@font-face {
+  font-family: 'Nanum Square light';
+  font-style: normal;
+  font-weight: 100;
+  src: url(font/NanumSquareL.eot);
+  src: local('Nanum Square Light'),
+       local('NanumSquareL'),
+       url(font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumSquareL.woff2) format('woff2'),
+       url(font/NanumSquareL.woff) format('woff'),
+       url(font/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/NanumSquareR.eot);
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url(font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumSquareR.woff2) format('woff2'),
+       url(font/NanumSquareR.woff) format('woff'),
+       url(font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Squaref bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url(font/NanumSquareB.eot);
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url(font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(font/NanumSquareB.woff2) format('woff2'),
+       url(font/NanumSquareB.woff) format('woff'),
+       url(font/NanumSquareB.ttf) format('truetype');
+}
+
+*{
+	font-family: 'Roboto', 'Nanum Square', sans-serif;
+	font-size:14px;
+	color:#7a7a7a;
+	letter-spacing:-0.5px;
+	line-height:1.6;
+	box-sizing:border-box;
+	outline:none !important;
+}
+img{
+	border:0;
+}
+a, a:hover, a:focus{
+	text-decoration:none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+span, em, strong, b{
+	font-size:100%;
+	color:inherit;
+	font-family:inherit;
+	line-height:inherit;
+	letter-spacing:inherit;
+}
+input[type=submit], 
+input[type=button], 
+input[type=text] {
+	-webkit-appearance:none;
+}
+h1 {
+	color:#fff;
+}
+.stit {
+	color:#999;
+}
+.mu-f1{
+	font-family: handel-gothic,sans-serif;
+	letter-spacing:0;
+	line-height:1.1;
+}
+.mu-f2{
+	font-family: "Times New Roman", Times, serif;
+	letter-spacing:0;
+}
+.main_color {
+	color:#c67ed8;
+}
+#particle-canvas {
+	position:fixed !important;
+	top:0;
+	left:0;
+	width: 100vw;
+	height: 100vh;
+}
+#wrap_all {
+	position:relative;
+	padding-top:85px;
+	z-index:10;
+}
+

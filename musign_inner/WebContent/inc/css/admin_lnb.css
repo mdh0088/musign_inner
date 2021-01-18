@@ -1,0 +1,85 @@
+/*당구공기능 팝업창*/
+
+.alarm_div {
+	width:100%; 
+	height:100%;  
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.5);
+	z-index:10;
+	overflow-y:hidden !important;
+}
+
+.alarm_div.click {
+	
+}
+
+.alarm_div .root_tableWrap {
+	position: relative;
+    top: 5%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 800px;
+}
+
+.alarm_div .tableWrap { /*반응*/
+	width: 100%;
+	max-width: 1200px;
+    height: 90%;
+    left: auto;
+    margin: 0 auto;
+    display: table;
+    overflow: hidden;
+    overflow-y: scroll;
+	background:#fff;
+}
+
+.alarm_div .tableWrap .tableBox {
+	display: table-cell;
+    vertical-align: middle;
+    padding: 30px 60px;
+}
+
+.alarm_div .tableWrap .tableBox tr:nth-child(1) {
+	border-top:2px solid #000;
+}
+
+.alarm_div .tableWrap .tableBox tr {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.alarm_div .tableWrap .tableBox td {
+	width:20%;
+	text-align:center;
+}
+
+.alarm_div .tableWrap .tableBox td a {
+	color:#000;
+}
+
+.alarm_div .number {
+	text-align: center;
+    color: #000;
+    border: none;
+   padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
