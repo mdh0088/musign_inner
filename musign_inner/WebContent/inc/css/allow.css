@@ -1,0 +1,193 @@
+.allow {display:none;}
+.guntaeInput{
+    background:none;
+    border:none;
+}
+.timeinput{
+    width:50px;
+}
+.board-lay02{
+	margin-top:0;
+	border-top:0;
+	border-bottom:0;
+	width:100%;
+}
+.addrow-wr{
+	padding:0 !important;	
+	border-bottom:0 !important;
+}
+.board-lay02 th{
+	width:170px;
+}
+.board-lay02 td{
+	width:300px;
+}
+.board-lay02 td.btnwr{
+	text-align:right !important;
+	width:80px;
+}
+input[type="file"]{
+    vertical-align:bottom;
+    height:44px;
+	padding-top: 10px;
+}
+
+.btn-add {
+	margin:0 5px !important;
+}
+#jicul_1 { /*기타내용아래쪽*/
+	margin-bottom: 5px;
+}
+#jicul_2 { /*기타내용아래쪽*/
+	margin-bottom: 5px;
+}
+#jicul_3 { /*기타내용아래쪽*/
+	margin-bottom: 5px;
+}
+/* 전체배경 */
+.attach_div {
+	width:100%; 
+	height:100%;  
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.5);
+	z-index:10;
+	overflow-y:hidden !important;
+}
+.attach_div.click {
+	top:0;
+	left:0;
+	transition:all 0.3s;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+
+/* 테이블 wrap */
+
+.attach_div .root_tableWrap {
+	position: relative;
+    top: 5%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.attach_div .tableWrap { /*반응*/
+	width: 100%;
+	max-width: 1200px;
+    height: 90%;
+	/* position:relative;
+    top: 5%; */
+    left: auto;
+    margin: 0 auto;
+    display: table;
+    overflow: hidden;
+    overflow-y: scroll;
+	background:#fff;
+}
+
+.attach_div .tableWrap:before {
+	content:"";
+	display:block;
+	width:100%;
+	height:1px;
+	background:#333;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.attach_div .tableWrap .tableBox {
+	 display: table-cell;
+	 vertical-align:middle;
+	 padding:30px 60px;
+}
+
+.attach_div .tableWrap .table:nth-of-type(1) {
+	border-top:2px solid #000;
+}
+
+.attach_div .tableWrap .tableBox .table tr {
+	border-bottom:1px solid #e0e0e0;
+}
+
+.attach_div .tableWrap .tableBox .table tr td {
+	text-align:center;
+	color:#000;
+	border:none;
+	padding:9px 0;
+}
+
+.attach_div .tableWrap .tableBox .Number { /* 1.테이블 숫자 */
+	width:10%;
+}
+
+.attach_div .tableWrap .tableBox .Payment { /*  2.결제번호 */
+	width:20%;
+}
+
+.attach_div .tableWrap .tableBox .Content  { /* 3.내용 */
+	width:20%;
+}
+
+/* 4.선택버튼 */
+.attach_div .tableWrap .tableBox .SelBtn input {
+	display:block;
+	padding:0 15px;
+	width:90%'
+	margin:0 auto;
+	max-width:55px;
+	height:35px;
+	line-height:35px;
+	font-size:13px;
+	background:rgba(0,0,0,0.7);
+	color: #fff;
+	border:none;
+	outline: none;
+	background:#000;
+	cursor:pointer;
+	min-width:1px;
+}
+
+/* 닫기버튼 */
+.closeBtn {
+	position: absolute;
+    top: 5%;
+    right: 50%;
+    margin-right: -680px;	
+}
+.closeBtn .attachClose {
+	width:30px; 
+	height:30px; 
+	border:none;  
+	font-size:0; 
+	background:url(/img/exit.png) no-repeat center center; outline:none; cursor:pointer;
+	min-width:60px;
+}
+
+.all-detop > div{
+	vertical-align:bottom;
+}
+.all-detop{
+	max-width:800px;
+}
+.text-right{
+	text-align:right;
+}
+
+@media all and (max-width:700px) {
+   html {
+		overflow-x:hidden;
+   }
+
+   .closeBtn .attachClose {
+		min-width: 30px;
+   }
+}
+
+
+

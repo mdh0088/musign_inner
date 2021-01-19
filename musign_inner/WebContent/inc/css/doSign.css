@@ -1,0 +1,29 @@
+/*페이징처리*/
+.pro-pagenation ul {
+	text-align:center;
+}
+
+.pro-pagenation ul strong { /* 1번 */
+	display:inline-block;
+	width:32px;
+	height:32px;
+	line-height:32px;
+	border-radius:100px;
+	border:1px solid #000;
+	background:#333;
+	color:#fff;
+}
+
+.pro-pagenation ul span {
+	display:block;
+	height:inherit;
+	line-height:inherit;
+}
+
+.pro-pagenation ul a { /* 2 ~ 8번 */
+	display:inline-block;
+	width:32px;
+	height:32px;
+	height:inherit;
+	line-height:inherit;
+}

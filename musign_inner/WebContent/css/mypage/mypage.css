@@ -1,0 +1,60 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#mypage_wrapper {
+	margin:50px 0 0 0;
+}
+#mypage_wrapper > .inner {
+	width:100%;
+	max-width:1680px;
+	margin:0 auto;
+	padding:0 30px;
+}
+#mypage_wrapper .cellbox {
+	font-size:0;
+}
+#mypage_wrapper .cellbox > .cell {
+	display:inline-block;
+	vertical-align:top;
+}
+#mypage_wrapper .cellbox > .cell1 {
+    width: 25%;
+    margin-right: 5%;
+    text-align: center;
+}
+#mypage_wrapper .cellbox > .cell2 {
+	width:65%;
+}
+#mypage_wrapper .info_box {
+    background: #191919;
+    padding: 20px;
+    border-radius: 5px;
+}
+.profile_img_wrap {
+    background: white;
+    height: 500px;
+    overflow: hidden;
+}
+#header {
+    background: #000;
+    box-shadow: 0.5px 0.5px 30px rgba(51,51,51,.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
